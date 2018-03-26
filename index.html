@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Billetin</title>
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/feature-carousel.css" rel="stylesheet">
+    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="featurecarousel/css/feature-carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dialog.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/css.css" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="featurecarousel/js/jquery.featureCarousel.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/dialog.js"></script>
+
+
+
+</head>
+
+<body onload="gallery()">
+
+<header class="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--<div class="row">-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#"><img src="images/logo.png" /></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active LiNavbar"><a href="#ex1" class="ANavbar">О спектакле<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#ex2" class="ANavbar">Актеры</a></li>
+                    <li><a href="#ex3" class="ANavbar">События</a></li>
+                    <li><a href="#ex5" class="ANavbar">Где купить</a></li>
+                    <li><a href="#ex5" class="ANavbar">Контакты</a></li>
+                </ul>
+            </div>
+            <!--</div>-->
+        </div>
+    </nav>
+</header>
+
+<!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+    <!-- Индикаторы для карусели -->
+    <ol class="carousel-indicators">
+        <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+        <li data-target="#myCarousel" data-slide-to="0" class="active CarouselIndicators"></li>
+        <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+        <li data-target="#myCarousel" data-slide-to="1" class="CarouselIndicators"></li>
+        <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+        <li data-target="#myCarousel" data-slide-to="2" class="CarouselIndicators"></li>
+    </ol>
+    <!-- Слайды карусели -->
+    <div class="carousel-inner">
+        <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+        <div class="active item">
+            <a href="#" class="top_slider">Купить билет</a>
+            <div class="carousel-caption">
+                <p>Премьера года!</p>
+            </div>
+            <img alt="Image Caption" src="images/maxresdefault.jpg" class="ImgSlider">
+        </div>
+        <!-- Слайд №2 -->
+        <div class="item">
+            <a href="#" class="top_slider">Купить билет</a>
+            <div class="carousel-caption">
+                <p>Впервые в Петербурге!</p>
+            </div>
+            <img alt="Image Caption" src="images/2.jpeg" class="ImgSlider">
+        </div>
+        <!-- Слайд №3 -->
+        <div class="item">
+            <a href="#" class="top_slider">Купить билет</a>
+            <div class="carousel-caption">
+                <p>Самый смешной антрепризный<br /> спектакль года!</p>
+            </div>
+            <img alt="Image Caption" src="images/4.jpg" class="ImgSlider">
+        </div>
+    </div>
+    <!-- Навигация для карусели -->
+    <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+    </a>
+    <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+    </a>
+</div>
+
+<div class="services">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content-head">
+                <div class="col-md-9">
+                    <div class="text-top">
+                        <h3 class="h3__services">Гастроли легендарного московского театра «Миллениум»!</h3>
+                        <p class="p__services">Бронируйте и покупайте билеты на нашем сайте и Вы получите лучшее предложение на театральном рынке без наценки и сервисных сборов.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="services__button btn btn-viewMore">Бронировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-body" id="ex2">
+            <div class="row">
+                <h3 class="h3__services">Актёры</h3>
+                <ul class="content-body__list-group">
+                    <li class="col-md-3 content-body content-body__list-group-item">
+                        <div class="SizeContentBody">
+                            <img src="images/actors/iphone360_101776.jpg">
+                            <h6 class="h6__content-body">Марат Башаров</h6>
+                            <button type="button" class="content-body__button btn btn-viewMore">Купить билет</button>
+                        </div>
+                    </li>
+                    <li class="col-md-3 content-body content-body__list-group-item">
+                        <div class="SizeContentBody">
+                            <img src="images/actors/interesting_201212100830524.jpg">
+                            <h6 class="h6__content-body">Александр Серов</h6>
+                            <button type="button" class="content-body__button btn btn-viewMore">Бронировать</button>
+                        </div>
+                    </li>
+                    <li class="col-md-3 content-body content-body__list-group-item">
+                        <div class="SizeContentBody">
+                            <img src="images/actors/a6281e0a441fabf278423c3eea4ef807--russia-cinema.jpg">
+                            <h6 class="h6__content-body">Лев Толстой</h6>
+                            <button type="button" class="content-body__button btn btn-viewMore">Бронировать</button>
+                        </div>
+                    </li>
+                    <li class="col-md-3 content-body content-body__list-group-item list-group-item__last">
+                        <div class="SizeContentBody">
+                            <img src="images/actors/17-58.jpg">
+                            <h6 class="h6__content-body">Владимир Афанасьев</h6>
+                            <button type="button" class="content-body__button btn btn-viewMore">Купить билет</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overview" id="ex3">
+    <div class="container-fluid">
+        <div class="row">
+            <h3 class="h3__services">Бешеная динамика спектакля – два акта пролетают на одном дыхании!</h3>
+            <div class="col-md-6">
+                <div class="video_left">
+                    <video controls="controls" poster="">
+                        <source src="video/30 секунд без лого.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Тег video не поддерживается вашим браузером.
+                        <a href="video/30 секунд без лого.mp4">Скачайте видео</a>.
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="video_right">
+                    <video controls="controls" poster="">
+                        <source src="video/мастер 1 мин дс без лого.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Тег video не поддерживается вашим браузером.
+                        <a href="video/мастер 1 мин дс без лого.mp4">Скачайте видео</a>.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="why">
+    <h1 class="h1_why">Спектакль «День сюрпризов» – номинант и лауреат 4-х театральных премий!</h1>
+    <p class="p_why">Премьера года!</p>
+
+    <div class="carousel_middle">
+        <div class="container-fluid">
+            <div class="carousel-container">
+                <div id="carousel">
+                    <div class="carousel-feature">
+                        <a href="#"><img class="carousel-image" alt="Image Caption" src="images/performance/24.jpg"></a>
+                    </div>
+                    <div class="carousel-feature">
+                        <a href="#"><img class="carousel-image" alt="Image Caption" src="images/performance/27.jpg"></a>
+                    </div>
+                    <div class="carousel-feature">
+                        <a href="#"><img class="carousel-image" alt="Image Caption" src="images/performance/31.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about_play" id="ex1">
+    <div class="container-fluid">
+        <div class="row">
+            <ul>
+                <li><b>Название:</b> «День сюрпризов»</li>
+
+                <li><b>Дата проведения:</b> 28 мая 2018 года</li>
+                <li><b>Начало:</b> 19:00</li>
+                <li>
+                    <b>Место проведения:</b> Выборгский Дворец культуры, г. Санкт-Петербург, <a href="http://gosteatr.ru/den-syurprizov/" target="_blank">http://dkvyborgsky.ru</a>
+                    <img src="images/palace.jpg" alt="Выборгский Дворец культуры" />
+                </li>
+                <li><b>В ролях:</b> Татьяна Васильева, Марат Башаров, Евгений Воскресенский, Филипп Васильев</li>
+                <li><b>Режиссер:</b> Владимир Устюгов</li>
+                <li><b>Автор:</b> Валерий Мухарьямов</li>
+                <li><b>Возрастная категория:</b> 16+</li>
+                <li><b>Продолжительность:</b> 2 часа</li>
+                <li><b>Ссылка на спектакль:</b> <a href="http://gosteatr.ru/den-syurprizov/" target="_blank">http://gosteatr.ru/den-syurprizov/</a></li>
+                <li><b>Релиз 1:</b> Премьера сезона 2017 – спектакль «День сюрпризов»!<br />
+                Вам придется по душе оригинальная комедия в исполнении любимцев публики Татьяны Васильевой, Марата Башарова, Евгения Воскресенского и Филиппа Васильева. Пьеса расскажет о закулисной жизни актеров: их влюбленностях и разводах, головокружительных взлетах и моментах щемящего одиночества, интригах, сплетнях и вечном стремлении быть номером один. Тонкий, умный, ироничный, спектакль стоит того, чтобы потратить на него вечер.
+                Чем все закончится? Кто знает…</li>
+                <li><b>Релиз 2:</b> Пьеса расскажет о закулисной жизни актеров и режиссеров: их влюбленностях и разводах, головокружительных взлетах и моментах щемящего одиночества, интригах, сплетнях и вечном стремлении быть номером один … и смех и слезы, и театр!!! Все это зритель увидит в спектакле "День сюрпризов" - полным юмора и самоиронии, где герои не раз оказывались в неожиданных и порой нелепо смешных ситуациях!</li>
+
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="arrow__body-middle">
+                <h4 class="h4__body-middle__arrow__body-middle">Фото спектакля</h4>
+            </div>
+        </div>
+
+       <!-- <div class="slider1">
+            <div class="slide"><img src="images/performance/1.jpg"></div>
+            <div class="slide"><img src="images/performance/2.jpg"></div>
+            <div class="slide"><img src="images/performance/3.jpg"></div>
+            <div class="slide"><img src="images/performance/4.jpg"></div>
+            <div class="slide"><img src="images/performance/5.jpg"></div>
+            <div class="slide"><img src="images/performance/6.jpg"></div>
+            <div class="slide"><img src="images/performance/7.jpg"></div>
+            <div class="slide"><img src="images/performance/8.jpg"></div>
+            <div class="slide"><img src="images/performance/9.jpg"></div>
+            <div class="slide"><img src="images/performance/10.jpg"></div>
+            <div class="slide"><img src="images/performance/11.jpg"></div>
+            <div class="slide"><img src="images/performance/12.jpg"></div>
+            <div class="slide"><img src="images/performance/13.jpg"></div>
+            <div class="slide"><img src="images/performance/14.jpg"></div>
+            <div class="slide"><img src="images/performance/15.jpg"></div>
+            <div class="slide"><img src="images/performance/16.jpg"></div>
+            <div class="slide"><img src="images/performance/17.jpg"></div>
+            <div class="slide"><img src="images/performance/18.jpg"></div>
+            <div class="slide"><img src="images/performance/19.jpg"></div>
+            <div class="slide"><img src="images/performance/20.jpg"></div>
+            <div class="slide"><img src="images/performance/21.jpg"></div>
+            <div class="slide"><img src="images/performance/22.jpg"></div>
+            <div class="slide"><img src="images/performance/23.jpg"></div>
+        </div>-->
+        <table>
+            <tr>
+                <td align="center" valign="middle">
+                    <div id="gallery">
+                        <a title="photo 1" class="img" href="images/performance/1.jpg"><img height="100" src="images/performance/1.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/2.jpg"><img height="100" src="images/performance/2.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/3.jpg"><img height="100" src="images/performance/3.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/4.jpg"><img height="100" src="images/performance/4.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/5.jpg"><img height="100" src="images/performance/5.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/6.jpg"><img height="100" src="images/performance/6.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/7.jpg"><img height="100" src="images/performance/7.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/8.jpg"><img height="100" src="images/performance/8.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/9.jpg"><img height="100" src="images/performance/9.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/10.jpg"><img height="100" src="images/performance/10.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/11.jpg"><img height="100" src="images/performance/11.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/12.jpg"><img height="100" src="images/performance/12.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/13.jpg"><img height="100" src="images/performance/13.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/14.jpg"><img height="100" src="images/performance/14.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/15.jpg"><img height="100" src="images/performance/15.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/16.jpg"><img height="100" src="images/performance/16.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/17.jpg"><img height="100" src="images/performance/17.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/18.jpg"><img height="100" src="images/performance/18.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/19.jpg"><img height="100" src="images/performance/19.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/20.jpg"><img height="100" src="images/performance/20.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/21.jpg"><img height="100" src="images/performance/21.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/22.jpg"><img height="100" src="images/performance/22.jpg"></a>
+                        <a title="photo 2" class="img" href="images/performance/23.jpg"><img height="100" src="images/performance/23.jpg"></a>
+                        <a title="last photo" class="img" href="images/performance/24.jpg"><img height="100" src="images/performance/24.jpg"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<div class="contact" id="ex5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="h5__contact"><span class="logo__large">Billetin</span></h5>
+                <p class="p__contact">
+                    Организация спектаклей и продажа билетов в театр в телефонном режиме.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="h5__contact company__h5__contact"><span class="logo__large company__h5__contact">Контакты организатора:</span></h5>
+                <ul class="ul__contact__company">
+                    <li class="li__contact"><i class="fa fa-angle-right" aria-hidden="true"></i>ООО «ГОСТЕАТР»</li>
+                    <li class="li__contact"><i class="fa fa-angle-right" aria-hidden="true"></i>Телефон: 8-800-200-44-87</li>
+                    <li class="li__contact"><i class="fa fa-angle-right" aria-hidden="true"></i>e-mail: info@gosteatr.ru</li>
+                    <li class="li__contact"><i class="fa fa-angle-right" aria-hidden="true"></i>ИНН: 7840037464</li>
+                    <li class="li__contact"><i class="fa fa-angle-right" aria-hidden="true"></i>Адрес: г. Санкт-Петербург, ул. Ломоносова, д. 18, корп. А, пом. 2-Н</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="h5__contact blog__h5__contact"><em>Последние новости</em></h5>
+                <ul class="ul__contact__blog">
+                    <li class="li__contact">
+                        <img src="images/palace.jpg" alt="" />
+                        <div class="date__li__contact">
+                            <p class="p__blog">«День сюрпризов»</p>
+                            <p class="p__Date">28 мая 2018 года</p>
+                        </div>
+                    </li>
+                    <li class="li__contact">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <div class="date__li__contact">
+                            <p class="p__blog">«Неожиданный поворот»</p>
+                            <p class="p__Date">28 февраля 2018 года</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="year">2018 Billetin</div>
+            <ul>
+                <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--
+                --><li><a href="http://www.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--
+                --><li><a href="http://www.tumblr.com" target="_blank"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li><!--
+                --><li><a href="http://www.rss.ru" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+ <!--Модальное Окно-->
+<div id="overlay">
+    <div class="popup">
+        <h4>Забронируйте и купите билеты на нашем сайте сейчас и получите:</h4>
+        <ul>
+            <li>Скидку 20% на покупку!</li>
+            <li>5-й билет в подарок при покупке 4-х!</li>
+            <li>Курьерскую доставку за счет компании!</li>
+        </ul>
+        <button type="button" class="btn btn-viewMore">Бронировать</button>
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+</div>
+
+</body>
+</html>
